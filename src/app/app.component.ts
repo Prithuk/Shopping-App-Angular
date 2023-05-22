@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shopping_app';
+
+  captureData: any;
+
+  onNavigate(receivedData: string) {
+    this.captureData = receivedData;
+  }
 }
